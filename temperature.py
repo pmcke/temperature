@@ -6,7 +6,7 @@ from openpyxl.chart import LineChart, Reference
 
 # Define the paths for input and output files
 input_file = sys.argv[1]
-output_file = input_file[:input_file.index('.')]+'.xlsx'
+output_file = input_file[:input_file.rfind('.')]+'.xlsx'
 
 # Initialize lists to store the parsed data
 timestamps = []
